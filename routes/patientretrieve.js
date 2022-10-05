@@ -18,7 +18,7 @@ axios.defaults.headers.post['Content-Type'] = 'application/json';
 /* GET Patient (retrieve) page. */
 router.get('/', function (req, res, next) {
 
-  console.log("Inside /getpatientretireve!");
+  console.log("Inside /getpatientretireve! VERSION 1");
 
   //console.log("req.query :" + req.body)
   //var id = req.query.id;
@@ -129,16 +129,6 @@ router.get('/', function (req, res, next) {
       // always executed
     });
 
-});
-
-module.exports = router;
-
-
-
-/* GET patient page. */
-router.get('/', function (req, res, next) {
-  res.render("patient");
-  //res.render('index', { title: 'Express' });
 });
 
 module.exports = router;
